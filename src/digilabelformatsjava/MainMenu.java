@@ -102,7 +102,6 @@ public class MainMenu extends javax.swing.JFrame {
         btnChangeFormat = new javax.swing.JButton();
         btnDeleteFormat = new javax.swing.JButton();
         btnExportFormatsToFile = new javax.swing.JButton();
-        btnAddFormatToDatabase = new javax.swing.JButton();
         btnExportSummary = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -145,13 +144,6 @@ public class MainMenu extends javax.swing.JFrame {
             }
         });
 
-        btnAddFormatToDatabase.setLabel("ADD A LABELFORMAT TO DATABASE");
-        btnAddFormatToDatabase.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnAddFormatToDatabaseActionPerformed(evt);
-            }
-        });
-
         btnExportSummary.setLabel("EXPORT SUMMARY FOR PRODUCTION");
         btnExportSummary.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -175,7 +167,6 @@ public class MainMenu extends javax.swing.JFrame {
                             .addComponent(btnChangeFormat, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                             .addComponent(btnDeleteFormat, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
                     .addComponent(btnExportFormatsToFile, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(btnAddFormatToDatabase, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(btnExportSummary, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addContainerGap())
         );
@@ -197,9 +188,7 @@ public class MainMenu extends javax.swing.JFrame {
                 .addComponent(btnExportSummary)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(btnExportFormatsToFile)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(btnAddFormatToDatabase)
-                .addContainerGap())
+                .addGap(45, 45, 45))
         );
 
         pack();
@@ -330,12 +319,6 @@ public class MainMenu extends javax.swing.JFrame {
 }        // TODO add your handling code here:
     }//GEN-LAST:event_btnExportFormatsToFileActionPerformed
 
-    private void btnAddFormatToDatabaseActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAddFormatToDatabaseActionPerformed
-        // TODO add your handling code here:
-        CreateFormatFile cf = new CreateFormatFile(this.LabelFormats);
-        System.out.println(cf.getDigidriverTextCombined());
-    }//GEN-LAST:event_btnAddFormatToDatabaseActionPerformed
-
     private void btnExportSummaryActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnExportSummaryActionPerformed
         // TODO add your handling code here:
         JFrame parentFrame = new JFrame();
@@ -403,7 +386,6 @@ public class MainMenu extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton btnAddFormatToDatabase;
     private javax.swing.JButton btnAddLabel;
     private javax.swing.JButton btnChangeFormat;
     private javax.swing.JButton btnDeleteFormat;

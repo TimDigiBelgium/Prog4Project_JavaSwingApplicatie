@@ -37,7 +37,6 @@
                       </Group>
                   </Group>
                   <Component id="btnExportFormatsToFile" alignment="0" max="32767" attributes="0"/>
-                  <Component id="btnAddFormatToDatabase" alignment="1" max="32767" attributes="0"/>
                   <Component id="btnExportSummary" alignment="1" max="32767" attributes="0"/>
               </Group>
               <EmptySpace max="-2" attributes="0"/>
@@ -64,9 +63,7 @@
               <Component id="btnExportSummary" min="-2" max="-2" attributes="0"/>
               <EmptySpace type="unrelated" max="-2" attributes="0"/>
               <Component id="btnExportFormatsToFile" min="-2" max="-2" attributes="0"/>
-              <EmptySpace type="unrelated" max="-2" attributes="0"/>
-              <Component id="btnAddFormatToDatabase" min="-2" max="-2" attributes="0"/>
-              <EmptySpace max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="45" max="-2" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -129,14 +126,6 @@
       </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnExportFormatsToFileActionPerformed"/>
-      </Events>
-    </Component>
-    <Component class="javax.swing.JButton" name="btnAddFormatToDatabase">
-      <Properties>
-        <Property name="label" type="java.lang.String" value="ADD A LABELFORMAT TO DATABASE"/>
-      </Properties>
-      <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnAddFormatToDatabaseActionPerformed"/>
       </Events>
     </Component>
     <Component class="javax.swing.JButton" name="btnExportSummary">
